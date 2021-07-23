@@ -1,5 +1,6 @@
 # CrossVIS
 
+</br>
 
 > [**Crossover Learning for Fast Online Video Instance Segmentation**](https://arxiv.org/abs/2104.05970) (ICCV 2021)
 >
@@ -11,9 +12,6 @@
 
 
 </br>
-
-</br>
-
 
 
 ### Citation
