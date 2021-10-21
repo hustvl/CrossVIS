@@ -29,8 +29,8 @@
 ## Main Results on YouTube-VIS 2019 Dataset
 Name | AP | AP@50 | AP@75 | AR@1 | AR@10 | download
 --- |:---:|:---:|:---:|:---:|:---:|:---:
-[CrossVIS_R_50_1x](configs/CrossVIS/R_50_1x.yaml) | 35.5 | 55.1 | 39.0 | 35.4 | 42.2 | [model]()
-[CrossVIS_R_101_1x](configs/CrossVIS/R_101_1x.yaml) | 36.9 | 57.8 | 41.4 | 36.2 | 43.9 | [model]()
+[CrossVIS_R_50_1x](configs/CrossVIS/R_50_1x.yaml) | 35.5 | 55.1 | 39.0 | 35.4 | 42.2 | [model]() &#124; [results]()
+[CrossVIS_R_101_1x](configs/CrossVIS/R_101_1x.yaml) | 36.9 | 57.8 | 41.4 | 36.2 | 43.9 | [model]() &#124; [results]()
 
 ## Getting Started
 
