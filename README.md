@@ -27,10 +27,13 @@
 </div>
 
 ## Main Results on YouTube-VIS 2019 Dataset
+
+* We provide both checkpoints and codalab server submissions in the bellow link.
+
 Name | AP | AP@50 | AP@75 | AR@1 | AR@10 | download
 --- |:---:|:---:|:---:|:---:|:---:|:---:
-[CrossVIS_R_50_1x](configs/CrossVIS/R_50_1x.yaml) | 35.5 | 55.1 | 39.0 | 35.4 | 42.2 | [model]() &#124; [results]()
-[CrossVIS_R_101_1x](configs/CrossVIS/R_101_1x.yaml) | 36.9 | 57.8 | 41.4 | 36.2 | 43.9 | [model]() &#124; [results]()
+[CrossVIS_R_50_1x](configs/CrossVIS/R_50_1x.yaml) | 35.5 | 55.1 | 39.0 | 35.4 | 42.2 | [baidu](https://pan.baidu.com/s/10ccx2RrA-TCJr8ZNXmlm2w)(keycode: ```a0j0```) &#124; [google]()
+[CrossVIS_R_101_1x](configs/CrossVIS/R_101_1x.yaml) | 36.9 | 57.8 | 41.4 | 36.2 | 43.9 | [baidu](https://pan.baidu.com/s/1orXUtSQC_1ZvsOa6XcFteA)(keycode: ```iwwo```) &#124; [google]()
 
 ## Getting Started
 
