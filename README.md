@@ -1,4 +1,14 @@
-# CrossVIS
+<div align="center">   
+  <img width="75%" alt="QueryInst-VIS Demo" src="https://user-images.githubusercontent.com/45201863/138304424-41279aa5-86b0-4c1c-b747-4f1788f78d7a.png">
+</div>
+
+<div align="center">
+  <img width="75%" alt="QueryInst-VIS Demo" src="https://user-images.githubusercontent.com/45201863/138265556-7c58cd89-d0a9-4708-b37f-e9f166443c92.gif">
+</div>
+
+* **TL;DR:** **CrossVIS (Crossover Learning for Fast Online Video Instance Segmentation)** proposes a novel crossover learning paradigm to fully leverage rich contextual information across video frames, and obtains great trade-off between accuracy and speed for video instance segmentation.
+
+# Crossover Learning for Fast Online Video Instance Segmentation
 
 </br>
 
@@ -10,11 +20,90 @@
 > 
 > *arXiv technical report ([arXiv 2104.05970](http://arxiv.org/abs/2104.05970))*
 
-
 </br>
 
+<div align="center">
+  <img width="100%" alt="QueryInst-VIS Demo" src="https://user-images.githubusercontent.com/45201863/138266370-0fe4cb3e-74dc-4a55-90c9-76f92a78e548.gif">
+</div>
 
-### Citation
+## Main Results on YouTube-VIS 2019 Dataset
+Name | AP | AP@50 | AP@75 | AR@1 | AR@10 | download
+--- |:---:|:---:|:---:|:---:|:---:|:---:
+[CrossVIS_R_50_1x](configs/CrossVIS/R_50_1x.yaml) | 35.5 | 55.1 | 39.0 | 35.4 | 42.2 | [model]()
+[CrossVIS_R_101_1x](configs/CrossVIS/R_101_1x.yaml) | 36.9 | 57.8 | 41.4 | 36.2 | 43.9 | [model]()
+
+## Getting Started
+
+### Installation
+
+First, clone the repository locally:
+
+```bash
+git clone https://github.com/hustvl/CrossVIS.git
+```
+
+Then, create python virtual environment with conda:
+```bash
+conda create --name crossvis python=3.7.2
+conda activate crossvis
+```
+
+Install torch 1.7.0 and torchvision 0.8.1:
+```bash
+pip install torch==1.7.0 torchvision==0.8.1
+```
+
+Follow the [instructions](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) to install ```detectron2```. Please install ```detectron2``` with commit id [9eb4831](https://github.com/facebookresearch/detectron2/commit/9eb4831f742ae6a13b8edb61d07b619392fb6543) if you have any issues related to ```detectron2```.
+
+Then install ```AdelaiDet``` by:
+```bash
+cd CrossVIS
+python setup.py develop
+```
+
+### Preparation
+
+* Download ```YouTube-VIS 2019``` dataset from [here](https://youtube-vos.org/dataset/vis/), the overall directory hierachical structure is:
+```
+CrossVIS
+├── datasets
+│   ├── youtubevis
+│   │   ├── train
+│   │   │   ├── 003234408d
+│   │   │   ├── ...
+│   │   ├── val
+│   │   │   ├── ...
+│   │   ├── annotations
+│   │   │   ├── train.json
+│   │   │   ├── valid.json
+```
+* Download ```CondInst``` 1x pretrained model from [here](https://github.com/aim-uofa/AdelaiDet/blob/master/configs/CondInst/README.md)
+
+### Training
+
+* Train CrossVIS R-50 with single GPU:
+```bash
+python tools/train_net.py --config configs/CrossVIS/R_50_1x.yaml MODEL.WEIGHTS $PATH_TO_CondInst_MS_R_50_1x
+```
+
+* Train CrossVIS R-50 with multi GPUs:
+```bash
+python tools/train_net.py --config configs/CrossVIS/R_50_1x.yaml --num-gpus $NUM_GPUS MODEL.WEIGHTS $PATH_TO_CondInst_MS_R_50_1x
+```
+
+### Inference
+
+```bash
+python tools/test_vis.py --config-file configs/CrossVIS/R_50_1x.yaml --json-file datasets/youtubevis/annotations/valid.json --opts MODEL.WEIGHTS $PATH_TO_CHECKPOINT
+```
+
+The final results will be stored in ```results.json```, just compress it with ```zip``` and upload to the codalab server to get the performance on validation set.
+
+## Acknowledgement :heart:
+
+This code is mainly based on [```detectron2```](https://github.com/facebookresearch/detectron2.git) and [```AdelaiDet```](https://github.com/aim-uofa/AdelaiDet.git), thanks for their awesome work and great contributions to the computer vision community!
+
+## Citation
 
 If you find our paper and code useful in your research, please consider giving a star :star: and citation :pencil: :
 
