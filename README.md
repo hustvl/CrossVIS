@@ -63,7 +63,7 @@ python setup.py develop
 
 ### Preparation
 
-* Download ```YouTube-VIS 2019``` dataset from [here](https://youtube-vos.org/dataset/vis/), the overall directory hierachical structure is:
+* Download ```YouTube-VIS 2019``` dataset from [here](https://youtube-vos.org/dataset/vis/), the overall directory hierarchical structure is:
 ```
 CrossVIS
 ├── datasets
