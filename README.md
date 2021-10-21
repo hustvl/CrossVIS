@@ -32,8 +32,8 @@
 
 Name | AP | AP@50 | AP@75 | AR@1 | AR@10 | download
 --- |:---:|:---:|:---:|:---:|:---:|:---:
-[CrossVIS_R_50_1x](configs/CrossVIS/R_50_1x.yaml) | 35.5 | 55.1 | 39.0 | 35.4 | 42.2 | [baidu](https://pan.baidu.com/s/10ccx2RrA-TCJr8ZNXmlm2w)(keycode: ```a0j0```) &#124; [google](https://drive.google.com/file/d/1qDFf-Fk2R67iyzwR1_WbZ3IfwYgAR5vu/view?usp=sharing, https://drive.google.com/file/d/1zuBu4XpPlbCjh9jM00jPb5phk5jdl4la/view?usp=sharing)
-[CrossVIS_R_101_1x](configs/CrossVIS/R_101_1x.yaml) | 36.9 | 57.8 | 41.4 | 36.2 | 43.9 | [baidu](https://pan.baidu.com/s/1orXUtSQC_1ZvsOa6XcFteA)(keycode: ```iwwo```) &#124; [google](https://drive.google.com/file/d/11BRxiLDdqreEI66Lp0EwPvnHZn8msraa/view?usp=sharing, https://drive.google.com/file/d/1GGwUkqs6HhM4GHRkxQPXppun6QyvR8oh/view?usp=sharing)
+[CrossVIS_R_50_1x](configs/CrossVIS/R_50_1x.yaml) | 35.5 | 55.1 | 39.0 | 35.4 | 42.2 | [baidu](https://pan.baidu.com/s/10ccx2RrA-TCJr8ZNXmlm2w)(keycode: ```a0j0```) &#124; [google](https://drive.google.com/drive/folders/1wPY2_xF0ibxxF7ELBrwnb1K1-mk62uQ8?usp=sharing)
+[CrossVIS_R_101_1x](configs/CrossVIS/R_101_1x.yaml) | 36.9 | 57.8 | 41.4 | 36.2 | 43.9 | [baidu](https://pan.baidu.com/s/1orXUtSQC_1ZvsOa6XcFteA)(keycode: ```iwwo```) &#124; [google](https://drive.google.com/drive/folders/1wPY2_xF0ibxxF7ELBrwnb1K1-mk62uQ8?usp=sharing)
 
 ## Getting Started
 
