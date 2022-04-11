@@ -232,13 +232,13 @@ class CrossVIS(nn.Module):
             reduction='sum') / reid_output.size(0)
 
         losses, losses_0, losses_1 = {}, {}, {}
-        losses.update(sem_losses_0)
-        losses.update(proposal_losses_0)
-        losses.update(mask_losses_0)
+        losses_0.update(sem_losses_0)
+        losses_0.update(proposal_losses_0)
+        losses_0.update(mask_losses_0)
 
-        losses.update(sem_losses_1)
-        losses.update(proposal_losses_1)
-        losses.update(mask_losses_1)
+        losses_1.update(sem_losses_1)
+        losses_1.update(proposal_losses_1)
+        losses_1.update(mask_losses_1)
 
         for key in losses_0:
             losses[key] = (losses_0[key] + losses_1[key]) / 2.
